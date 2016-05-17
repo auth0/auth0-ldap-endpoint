@@ -30,7 +30,7 @@ This will start the LDAP server and allow users to bind and search.
 
 ## Example
 
-The [example/test-client.js](example/test-client.js) script is a small sample that shows the supported features like `bind` and `search`:
+The [examples/test-client.js](examples/test-client.js) script is a small sample that shows the supported features like `bind` and `search`:
 
 ```
 node test-client.js
