@@ -2,6 +2,10 @@
 
 An LDAP server that allows you to connect your legacy applications with Auth0 using the LDAP protocol.
 
+## Important
+
+Please treat this project as a sample, in an early "alpha" state. If you find bugs [file an issue](https://github.com/auth0/auth0-ldap-endpoint/issues/new) or submit a pull request. 
+
 ## Supported Features
 
 * Bind
