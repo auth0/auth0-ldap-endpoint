@@ -6,6 +6,9 @@ An LDAP server that allows you to connect your legacy applications with Auth0 us
 
 * Bind
 * Search (on email address only)
+ 
+## Warning
+This software is meant as a proof of concept, not for production use. It is not directly supported by Auth0, nor is actively maintained. 
 
 ## Before Getting Started
 
