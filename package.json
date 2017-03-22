@@ -23,7 +23,11 @@
     "eslint-plugin-babel": "^3.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"prestart": "docker build -t auth0-ldap-endpoint .",
+	"start": "docker run -d -p 1389:1389 auth0-ldap-endpoint > '.DOCKERRUN'",
+	"stop": "AUTH0_UUID=$(cat .DOCKERRUN) && docker stop ${AUTH0_UUID}"
+
   },
   "author": "",
   "license": "ISC"
