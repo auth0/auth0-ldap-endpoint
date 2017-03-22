@@ -25,6 +25,20 @@ Install Node.js 5+, then start the server:
 npm install
 node index
 ```
+## Docker Usage
+
+install node_modules
+start the container
+stop the container
+
+```
+npm install
+npm start
+npm stop
+
+```
+
+
 
 This will start the LDAP server and allow users to bind and search.
 
