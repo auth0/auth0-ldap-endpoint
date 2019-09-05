@@ -17,7 +17,12 @@ nconf
 logger.info('Starting LDAP endpoint for Auth...');
 
 const server = ldap.createServer();
-server.bind('', authenticate(nconf.get('AUTH0_DOMAIN'), nconf.get('AUTH0_CLIENT_ID')));
+server.bind('', authenticate(
+  nconf.get('AUTH0_DOMAIN'),
+  nconf.get('AUTH0_CLIENT_ID'),
+  nconf.get('AUTH0_CLIENT_SECRET')
+));
+
 server.search('', requireAdministrator, search(nconf.get('AUTH0_DOMAIN'), nconf.get('AUTH0_API_TOKEN')));
 server.listen(nconf.get('LDAP_PORT'), () => {
   logger.info(`LDAP server listening on: ${server.url}`);
