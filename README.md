@@ -16,7 +16,9 @@ In the `config.json` file set the following values:
  - `AUTH0_API_TOKEN `: Token for the Management API with `read:users` permission (used for search)
  - `LDAP_PORT`: Port on which the LDAP server will listen
  - `LDAP_ADMIN_USER`: The DN of the user that is allowed to do a search. Format: `CN=ADMIN_EMAIL_ADDRESS,OU=AUTH0_CONNECTION_NAME` (eg: `CN=admin@fabrikam.com,OU=Username-Password-Authentication`)
-
+ - `LDAPS_CERTIFICATE`: The certificate chain to use for LDAPS. Must be X509 PEM-encoded, see `cert` argument [here](https://nodejs.org/api/tls.html#tls_tls_createsecurecontext_options).
+ - `LDAPS_KEY`: Private key corresponding to the configured certificate to use for LDAPS. Must be PEM-encoded, see `key` argument in the above link.
+ 
 ## Usage
 
 Install Node.js 5+, then start the server:
